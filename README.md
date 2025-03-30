@@ -1,5 +1,6 @@
-```
+![image](https://github.com/user-attachments/assets/94af396c-f977-4d31-bd91-9ab3451353e0)
 
+```
 git clone https://github.com/MohammeNayeemE/nvim-config  ~/.config/nvim
 
 
