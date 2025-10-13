@@ -1,11 +1,11 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
--- vim.cmd([[
---   highlight CursorNormal guifg=NONE guibg=#FF0000   " Red cursor for normal mode
---   highlight CursorInsert guifg=NONE guibg=#00FF00   " Green cursor for insert mode
---   highlight CursorReplace guifg=NONE guibg=#0000FF  " Blue cursor for replace mode
--- ]])
+vim.cmd([[
+  highlight Cursor guibg=#FF0000 guifg=NONE
+  highlight CursorInsert guibg=#00FF00 guifg=NONE
+  highlight CursorReplace guibg=#0000FF guifg=NONE
+]])
 -- -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 

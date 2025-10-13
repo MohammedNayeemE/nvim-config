@@ -7,7 +7,11 @@ o.shiftwidth = 8     -- Indentation levels are 8 spaces wide
 o.softtabstop = 8    -- Number of spaces inserted when pressing Tab
 o.expandtab = false
 
-vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:block,r-cr:block,o:hor20"
+vim.opt.guicursor = {
+  "n-v-c:block-Cursor",
+  "i-ci:ver25-CursorInsert",
+  "r-cr:hor20-CursorReplace",
+}
 
 -- vim.opt.guicursor = {
 --   "n-v-c-sm:block-CursorNormal", -- Block cursor with "CursorNormal" highlight in normal, visual, and command-line modes

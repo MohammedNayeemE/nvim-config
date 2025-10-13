@@ -18,7 +18,7 @@ M.ui = {
 }
 
 M.base46 = {
-	theme = "rosepine",
+	theme = "gruvchad",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -76,8 +76,25 @@ local function insert_leetcode_template()
         vim.notify("Template file not found: " .. template_path, vim.log.levels.ERROR)
     end
 end
+
+local function insert_html_template()
+	local template_path = vim.fn.stdpath("config") .. "/templates/template.html"
+	local file = io.open(template_path , "r")
+
+	if file then
+		local lines = {}
+		for line in file:lines() do 
+			table.insert(lines , line) 
+		end 
+		file:close()
+		vim.api.nvim_buf_set_lines(0 , 0 , -1 , false , lines)
+	else 
+		vim.notify("Template file not found" , vim.logs.levels.ERROR)
+	end
+end
 -- Add a command to insert the template
 vim.api.nvim_create_user_command("Cpp", insert_template, {})
 vim.api.nvim_create_user_command("CppI", insert_practice_template , {});
 vim.api.nvim_create_user_command("CppL" , insert_leetcode_template , {});
+vim.api.nvim_create_user_command("HTML" , insert_html_template, {});
 return M

@@ -10,7 +10,10 @@ local quotes = {
   "\"while(not_success) { try_again(); }\"",
   "\"Code is like humor. When you have to explain it, it's bad.\" – Cory House",
   "\"It's not a bug, it's a feature!\"",
-  "\"Keep it simple, stupid.\""
+  "\"Keep it simple, stupid.\"",
+  "\"Bigger the interface , weaker the abstraction - Rob Pike\"",
+  "\"You are gay for my code , you are CODE GAY\"",
+  "\"Those who can't remember the past are condemened to repeat it\"",
 }
 -- Function to get the current date and time
 local function get_date_time()
@@ -81,24 +84,24 @@ dashboard.setup({
         desc = get_date_time(),
         action = '',
       },
-      {
-        icon = '󰈞 ',
-        desc = 'Find File',
-        action = 'Telescope find_files',
-        key = 'f',
-      },
-      {
-        icon = '󰈬 ',
-        desc = 'Recent Files',
-        action = 'Telescope oldfiles',
-        key = 'r',
-      },
-      {
-        icon = '󰊄 ',
-        desc = 'Find Word',
-        action = 'Telescope live_grep',
-        key = 'g',
-      },
+      -- {
+      --   icon = '󰈞 ',
+      --   desc = 'Find File',
+      --   action = 'Telescope find_files',
+      --   key = 'f',
+      -- },
+      -- {
+      --   icon = '󰈬 ',
+      --   desc = 'Recent Files',
+      --   action = 'Telescope oldfiles',
+      --   key = 'r',
+      -- },
+      -- {
+      --   icon = '󰊄 ',
+      --   desc = 'Find Word',
+      --   action = 'Telescope live_grep',
+      --   key = 'g',
+      -- },
       {
         icon = '󰉋 ',
         desc = 'New File',

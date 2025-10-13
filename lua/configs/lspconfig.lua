@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls" , "clangd" , "ts_ls" , "gopls" , "pyright"}
+local servers = { "html", "cssls" , "clangd" , "ts_ls" , "gopls" , "pyright" ,"tailwindcss"}
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -15,6 +15,9 @@ for _, lsp in ipairs(servers) do
     capabilities = nvlsp.capabilities,
   }
 end
+        --
+        -- "lua-language-server" , "stylua" , "html-lsp" , "css-lsp" , "prettier" , "clangd" , "typescript-language-server" , "rust-analyzer" , "gopls","pyright", "tailwindcss"
+        --
 
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {

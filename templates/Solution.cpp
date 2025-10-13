@@ -20,6 +20,8 @@ using namespace std::chrono;
 #define INF 1e18
 #define PI 3.1415926535897932384626433832795
 #define rep(i,s,e) for(long long i = s ; i < e ; i++)
+#define YES() cout << "YES" << '\n';
+#define NO() cout << "NO" << '\n';
 mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
 typedef long long ll;
 typedef pair<int , int> pii;
@@ -54,6 +56,51 @@ vpll dir = {{-1 , 0} , {0 , -1} , {0 , 1} , {1 , 0}};
 bool isV(char x ){
   return x =='a' || x == 'e' || x  =='i' || x =='o' || x =='u' || x == 'A' || x == 'I' || x == 'O' || x == 'U' || x  == 'E';
 }
+
+
+/* ------------------------------PRINT TEMPLATES-------------------------------------*/ 
+
+template<typename T>
+
+void print(T data) {
+	cout << data << ' ';
+}
+template<typename T>
+void println(T data) {
+	cout << data << '\n';
+}
+
+template<typename T>
+void print(vector<T> data) {
+	for(auto it : data) cout << it << ' ';
+}
+
+template<typename T>
+void println(vector<T> data) {
+	for(auto it : data) cout << it << '\n';
+}
+
+template<typename T>
+void print(set<T> data) {
+	for(auto it : data) cout << it << ' ';
+}
+
+template<typename T>
+void println(set<T> data) {
+	for(auto it : data) cout << it << '\n';
+}
+
+template<typename T>
+void print(unordered_set<T> data) {
+	for(auto it : data) cout << it << ' ';
+}
+
+template<typename T>
+void println(unordered_set<T> data) {
+	for(auto it : data) cout << it << '\n';
+}
+
+
 
 
 /* ------------------------------ SOLVE -------------------------------------*/ 
